@@ -26,7 +26,7 @@
 
     <section id="projects">
         <h2>Mes Projets</h2>
-        <div class="project">
+        <div class="project" onclick="expandProject(this)">
             <div class="project-content">
                 <h3>Deep-Character</h3>
                 <div class="bottom_line"></div>
@@ -38,6 +38,14 @@
                 </div>
             </div>
             <p>Deep-Character est un bot discord dédié à un forum de jeu de rôle. Concrètement, sur commande, le bot va chercher aléatoirement un prompt sur un fichier json et la poste dans le salon. On peut ajouter des prompts directement depuis discord, afficher une liste dynamique avec des boutons qui permettent de naviguer dans les pages et modifier les prompts afin d'en corriger les erreurs.</p>
+            <div class="extra-content">
+                <h4>Ajouter un nouveau prompt</h4>
+                <img src="Assets/Deep_character_addrequest.png" alt="Démonstration de la fonction add qui permet d'ajouter un nouveau prompt dans le fichier json.">
+                <h4>Modifier un prompt éxistant</h4>
+                <img src="Assets/Deep_character_modrequest.png" alt="Démonstration de la fonction 'mod' qui permet de modifier un prompt.">
+                <h4>Afficher une liste</h4>
+                <img src="Assets/Deep_character_listerequest.png" alt="Démonstration de la fonction 'liste'. La fonction affiche un échantillon de 10 prompts si possible. A l'aide des boutons 'precedent' et 'suivant', on peut naviguer dans le fichier json.">
+            </div>
         </div>
     </section>
 
@@ -51,5 +59,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="open_project.js"></script>
 </body>
 </html>

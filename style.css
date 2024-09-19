@@ -55,6 +55,7 @@ section {
 }
 
 .project {
+    position: relative;
     background: #ddd;
     margin: 1rem 0;
     padding: 1rem;
@@ -78,13 +79,26 @@ section {
     width: 70%;
     height: 2px; /* Thickness of the line */
     background: black;
-    z-index: 1; /* Make sure it's behind the text */
+    z-index: 0; /* Make sure it's behind the text */
 }
 
 .project-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.project.active {
+    height: auto;
+}
+
+.extra-content {
+    display: none; /* Caché par défaut */
+    margin-top: 1rem;
+}
+
+.project.active .extra-content {
+    display: block; /* Afficher lorsque le projet est actif */
 }
 
 .hexagon-container {
@@ -150,7 +164,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; /* S'asurer que l'image soit affichée */
+    display: block; /* S'assurer que l'image soit affichée */
 }
 
 .coming-soon {
