@@ -1,0 +1,74 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+#about, #contact {
+    background: #f4f4f4;
+    margin: 1rem 0;
+}
+
+.project {
+    background: #ddd;
+    margin: 1rem 0;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project:hover {
+    background-color: #bbb;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+.project {
+    background: #ddd;
+    margin: 1rem 0;
+    padding: 1rem;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.project.active {
+    height: 400px; /* Ajuste selon le contenu */
+}
