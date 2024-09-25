@@ -1,4 +1,4 @@
-/* Style général */
+/*__________Général__________*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -54,6 +54,7 @@ section {
     margin: 1rem 0;
 }
 
+/*__________Set basic style for project class__________*/
 .project {
     position: relative;
     background: #ddd;
@@ -63,16 +64,19 @@ section {
     overflow: hidden;
 }
 
+/*__________Switch background color while hovering__________*/
 .project:hover {
     background-color: #bbb;
 }
 
+/*__________Set style for all h3 in project class__________*/
 .project h3 {
     position: relative;
     margin: 0;
     margin-bottom: 10px; /* Adjust if needed for spacing */
 }
 
+/*__________Add a line separator between project title and their description__________*/
 .bottom_line {
     position: absolute;
     margin-top: 12px;
@@ -87,30 +91,40 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-
+/*
 .project-content h3 {
     margin-right: 10px;
+    width: auto;
     position: relative;
-}
+}*/
 
-.title-and-logo {
+.title-and-languages {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 70%;
 }
 
-.project-logo {
+.logo_languages {
     position: relative;
-    width: 30px; /* Ajuste la taille du logo comme nécessaire */
-    height: 30px;
-    margin-left: 26.5rem; /* Espace entre le titre et le logo */
-    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    height: auto;
+    width: auto;
     z-index: 1; /* Mettre le logo par-dessus la ligne de séparation*/
 }
 
+.project-logo {
+    width: 30%;
+    height: auto;
+}
+
+/*__________Adapt height when project class is active___________*/
 .project.active {
     height: auto;
 }
 
+/*__________Hide while project class is non active__________*/
 .extra-content {
     display: none; /* Caché par défaut */
     margin-top: 1rem;
@@ -207,4 +221,18 @@ footer {
     padding: 1rem;
     background: #333;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .project-logo {
+        max-width: 60px;  /* Réduire la taille des logos sur les écrans plus petits */
+        max-height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-logo {
+        max-width: 40px;  /* Réduire encore plus sur les petits écrans */
+        max-height: 40px;
+    }
 }
