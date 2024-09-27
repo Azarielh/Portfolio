@@ -80,7 +80,7 @@ section {
 .bottom_line {
     position: absolute;
     margin-top: 12px;
-    width: 70%;
+    width: 78%;
     height: 2px; /* Thickness of the line */
     background: black;
     z-index: 0; /* Make sure it's behind the text */
@@ -102,20 +102,22 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    padding-bottom: 5%;
+/* ensure logos are keep on the right side*/
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
 }
 
 .logo_languages {
     position: relative;
-    display: flex;
-    align-content: center;
-    height: auto;
-    width: auto;
+    width:fit-content;
     z-index: 1; /* Mettre le logo par-dessus la ligne de séparation*/
 }
 
 .project-logo {
-    width: 30%;
+    width: 25%;
     height: auto;
 }
 
