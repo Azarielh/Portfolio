@@ -132,7 +132,6 @@ section {
 
 .hexagon-container {
     position: relative;
-    background-color: #fff;
     width: 120px;
     height: 120px;
     margin-right: 10px;
@@ -142,7 +141,6 @@ section {
 
 .hexagon {
     position: absolute;
-    background-color: #fff;
     top: 0;
     left: 0;
     width: 100%;
@@ -163,7 +161,6 @@ section {
 
 .hexagon-container .coming-soon {
     position: absolute;
-    background-color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
