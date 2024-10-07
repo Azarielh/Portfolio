@@ -79,9 +79,9 @@ section {
 /*__________Add a line separator between project title and their description__________*/
 .bottom_line {
     position: absolute;
-    margin-top: 12px;
+    margin-top: 1%;
     width: 78%;
-    height: 2px; /* Thickness of the line */
+    height: 0.8%; /* Thickness of the line */
     background: black;
     z-index: 0; /* Make sure it's behind the text */
 }
@@ -91,12 +91,6 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-/*
-.project-content h3 {
-    margin-right: 10px;
-    width: auto;
-    position: relative;
-}*/
 
 .title-and-languages {
     display: flex;
@@ -112,13 +106,13 @@ section {
 
 .logo_languages {
     position: relative;
-    width:fit-content;
+    width:max-content;
+    padding: 5%;
     z-index: 1; /* Mettre le logo par-dessus la ligne de séparation*/
 }
 
 .project-logo {
-    width: 25%;
-    height: auto;
+    height:30%;
 }
 
 /*__________Adapt height when project class is active___________*/
