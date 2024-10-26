@@ -112,7 +112,7 @@ section {
 }
 
 .project-logo {
-    height:30%;
+    height:5vw;
 }
 
 /*__________Adapt height when project class is active___________*/
@@ -132,8 +132,8 @@ section {
 
 .hexagon-container {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 20vw;
+    height: 20vw;
     margin-right: 10px;
     display: flex;
     justify-content: flex-end;
