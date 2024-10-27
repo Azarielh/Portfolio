@@ -81,7 +81,7 @@ section {
     position: absolute;
     margin-top: 1%;
     width: 78%;
-    height: 0.8px; /* Thickness of the line */
+    height: 1px; /* Thickness of the line */
     background: black;
     z-index: 0; /* Make sure it's behind the text */
 }
