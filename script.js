@@ -9,7 +9,7 @@ let particles = []; // memorize particles
 function setup() {
     let canvas = createCanvas(windowWidth, getHeaderHeight());
     canvas.position(0, 0);
-    canvas.style('z-index', '2'); //Place the animation behind the header content
+    canvas.style('z-index', '2'); //Place the canvas behind the header content
     canvas.style('position', 'absolute');
 
     hexa_pos_x = width / 2;
