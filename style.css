@@ -209,8 +209,7 @@ section {
 }
 
 p {
-    margin-top: 10%; /* Paragraphe sous le titre et l'image */
-    margin-right: 10%;
+    margin-top: 1%; /* Paragraphe sous le titre et l'image */
 }
 
 footer {
