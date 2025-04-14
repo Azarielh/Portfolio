@@ -176,7 +176,7 @@ section {
     position: absolute;
     width: 100px;
     height: 58px;
-    background-color: white;
+    background-color: inherit;
 }
 
 .hexagon:before {
@@ -209,7 +209,7 @@ section {
 }
 
 p {
-    margin-top: 1%; /* Paragraphe sous le titre et l'image */
+    margin-top: 10px; /* Paragraphe sous le titre et l'image */
 }
 
 footer {
