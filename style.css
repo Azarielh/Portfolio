@@ -212,6 +212,11 @@ p {
     margin-top: 10px; /* Paragraphe sous le titre et l'image */
 }
 
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
