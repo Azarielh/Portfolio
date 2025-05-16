@@ -225,7 +225,15 @@ h1 a:hover {
 }
 
 code {
-    background-color: slategray;
+    background-color: #2f3136;
+    color: #dcddde;
+    font-family: 'Consolas', 'Courrier New', monospace;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    line-height: 1.4;
+    white-space: pre-wrap;
 }
 footer {
     text-align: center;
