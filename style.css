@@ -224,7 +224,7 @@ h1 a:hover {
     cursor: default;
 }
 
-.inline_list {
+.inline_list li {
     display: inline;
     list-style-type: disc;
 }
