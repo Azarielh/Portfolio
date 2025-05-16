@@ -224,6 +224,9 @@ h1 a:hover {
     cursor: default;
 }
 
+code {
+    background-color: slategray;
+}
 footer {
     text-align: center;
     padding: 1rem;
