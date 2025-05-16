@@ -224,6 +224,10 @@ h1 a:hover {
     cursor: default;
 }
 
+.inline_list {
+    display: inline-block;
+    list-style-type: disc;
+}
 code {
     background-color: #2f3136;
     color: #dcddde;
@@ -232,7 +236,7 @@ code {
     padding: 0.5rem;
     border-radius: 8px;
     overflow-x: auto;
-    line-height: 1;
+    line-height: 0.8;
     white-space: pre-wrap;
 }
 footer {
