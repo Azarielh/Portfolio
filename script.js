@@ -51,7 +51,7 @@ function draw() {
 }
 
 function draw_hexa(x, y, radius, r, g, b) {
-    const angle = TWO_PI / 6; // 360° divisé par 6 pour un hexagone
+    const angle = TWO_PI / 6;
     
     noFill();
     strokeWeight(3.5);
