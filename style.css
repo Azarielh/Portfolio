@@ -272,6 +272,7 @@ footer {
   gap: 3%px;
   margin-top: 2%;
   width: 100%;
+  height: auto;
   flex-wrap: wrap; /* In case screen is too small */
 }
 
