@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Johan<span><a href="https://azarielh.github.io/Portfolio/interne.html">n</a></span> Lacaze Labarrère</h1>
+        <h1>Johann Lacaze Labarrère</h1>
         <nav>
             <ul>
                 <li><a href="#about">À propos</a></li>
@@ -37,6 +37,7 @@
                     </div>
                 </div>
                 <div class="bottom_line"></div>
+                <p class="short_description">Projet perso, ce bot discord est né de la volonté d'aider les rolistes à connaître et dévelloper leur personnage tout en enrichissant leur connaissance de l'univers dans lequel ils jouent.</p>
                 <div class="hexagon-container">
                     <div class="hexagon">
                         <img src="Assets/icone_deepCharacter.jfif" alt="Logo de Deep-Character" class="project-image">
@@ -44,8 +45,11 @@
                     </div>
                 </div>
             </div>
-            <p>Deep-Character est un bot discord dédié à un forum de jeu de rôle. Concrètement, sur commande, le bot va chercher aléatoirement un prompt sur un fichier json et la poste dans le salon. On peut ajouter des prompts directement depuis discord, afficher une liste dynamique avec des boutons qui permettent de naviguer dans les pages et modifier les prompts afin d'en corriger les erreurs.</p>
             <div class="extra-content">
+                <h4>Technologies utilisées</h4>
+                <ul>
+                    <li>Javascript</li><li>Discord.js</li><li>Javascript</li>
+                </ul>
                 <h4>Ajouter un nouveau prompt</h4>
                 <p>Grâce à cette fonctionnalité, chaque serveur pourra ajouter des prompts propre à leur univers.</p>
                 <img src="Assets/Deep_character_addrequest.png" alt="Démonstration de la fonction add qui permet d'ajouter un nouveau prompt dans le fichier json.">
@@ -57,33 +61,129 @@
                 <img src="Assets/Deep_character_listerequest.png" alt="Démonstration de la fonction 'liste'. La fonction affiche un échantillon de 10 prompts si possible. A l'aide des boutons 'precedent' et 'suivant', on peut naviguer dans le fichier json.">
             </div>
         </div>
-        <!--________CURSUS 42________--><!--
+        <!--________Optimisation tableur________-->
         <div class="project" onclick="expandProject(this)">
             <div class="project-content">
                 <div class="title-and-languages">
-                    <h3>CURSUS 42</h3>
+                    <h3>Tableau de suivi</h3>
                     <div class="logo_languages">
                         <img src="Assets/logo_js.svg" alt="Logo de langages js" class="project-logo">
+                        <img src="Assets/logo_AppScript.png" alt="Logo de AppScript" class="project-logo">
+                        <img src="Assets/logo_sheets.png" alt="Logo de Google Sheets" class="project-logo">
                     </div>
                 </div>
                 <div class="bottom_line"></div>
                 <div class="hexagon-container">
                     <div class="hexagon">
-                        <img src="Assets/logo_tumo.png" alt="Logo de Deep-Character" class="project-image">
+                        <img src="" alt="" class="project-image">
                         <span class="coming-soon">À venir</span>
                     </div>
                 </div>
             </div>
-            <p>Deep-Character est un bot discord dédié à un forum de jeu de rôle. Concrètement, sur commande, le bot va chercher aléatoirement un prompt sur un fichier json et la poste dans le salon. On peut ajouter des prompts directement depuis discord, afficher une liste dynamique avec des boutons qui permettent de naviguer dans les pages et modifier les prompts afin d'en corriger les erreurs.</p>
+            <p class="short_description">Ce projet est dans une dynamique de dévellopement continu dans le cadre de mes fonctions de Coach de création numérique à Tumo.</p>
             <div class="extra-content">
-                <h4>Ajouter un nouveau prompt</h4>
-                <img src="Assets/Deep_character_addrequest.png" alt="Démonstration de la fonction add qui permet d'ajouter un nouveau prompt dans le fichier json.">
-                <h4>Modifier un prompt éxistant</h4>
-                <img src="Assets/Deep_character_modrequest.png" alt="Démonstration de la fonction 'mod' qui permet de modifier un prompt.">
-                <h4>Afficher une liste</h4>
-                <img src="Assets/Deep_character_listerequest.png" alt="Démonstration de la fonction 'liste'. La fonction affiche un échantillon de 10 prompts si possible. A l'aide des boutons 'precedent' et 'suivant', on peut naviguer dans le fichier json.">
+                <h4>Problème de départ</h4>
+                <ul>
+                    <li>Informations nécessaire dispersées</li>
+                    <li>Complétions de liste manuelle</li>
+                    <li>Informations dispersées</li>
+                    <li>Pas d'historique accessible, donc de visuel sur les changements de parcours/créneaux</li>
+                    <li>Erreurs humaines</li>
+                </ul>
+                <h4>Objectifs</h4>
+                <ul>
+                    <li>Gagner du temps</li>
+                    <li>Faciliter la lecture des données</li>
+                    <li>Rendre l'outil accessible à tous</li>
+                </ul>
+                <h4>Solutions mises en place</h4>
+                <ul>
+                    <li>Refonte et factorisation du tableur via des formules avancées (INDEX, MATCH, QUERY…) pour limiter les doublons et réduire les erreurs humaines</li>
+                    <li>Développement de scripts automatisés : réinitialisation mensuelle de cases à cocher, envoi conditionnel d’emails, conversion de liens en affichage d’images</li>
+                    <li>Création d’une interface claire, structurée et réutilisable par des utilisateurs non techniques</li>
+                </ul>
+                <h4>Solutions en cours de dévellopement ou en vue d'être dévellopées</h4>
+                <ul>
+                    <li>(🛠️ <span class="badge in-progress">En cours</span>) ... Permettre un suivi au mois pour mieux repérer les changements dans le parcours des jeunes</li>
+                    <li>(🛠️ <span class="badge in-progress">En cours</span>) ... Script de mises à jour du tableur afin de profiter de la dernière version.</li>
+                    <li>(🔜 <span class="badge planned">    Plannifié</span>) ... Automatisé l'import des données nécessaire</li>
+                </ul>
+                <h4>Impact</h4>
+                <ul>
+                    <li>Un import simple de 4 tableaux depuis looker studio rassemble toutes les infos nécessaire au même endroit.
+                    <ul>
+                        <li>si prêt pour un lab même si pas inscrit</li>
+                        <li>slow learner or high learner</li>
+                        <li>domaines choisis</li>
+                        <li>ect...</li>
+                    </ul>
+                    <li>Photo des jeunes dans le tableur à coté des informations de suivi avec respect du rgpd (elle ne sont pas stockés sur le tableur)</li>
+                    <li>Outil utilisable sans connaissance approfondie du logiciel</li>
+
+                </ul>
             </div>
-        </div>-->
+        </div>
+        <!--________PROJET 42________-->
+        <div class="project" onclick="expandProject(this)">
+            <div class="project-content">
+                <div class="title-and-languages">
+                    <h3>Cursus 42</h3>
+                    <div class="logo_languages">
+                        <img src="Assets/logo_c.svg" alt="Logo de langages C" class="project-logo">
+                        <img src="Assets/logo_VirtualBox.png" alt="Logo de Virtual Box" class="project-logo">
+                    </div>
+                </div>
+                <div class="bottom_line"></div>
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <img src="Assets/logo_42.png" alt="Logo de 42" class="project-image">
+                        <span class="coming-soon">À venir</span>
+                    </div>
+                </div>
+            </div>
+            <p class="short_description">Sélectionné à la piscine du mois d'Aout 2024, j'ai démarré mon cursus 42 au mois de novembre de la même année en parrallèle de mon travail au centre Tumo. Le cursus 42 m’offre l’opportunité d’explorer en profondeur les rouages du langage C et du fonctionnement bas niveau d’un système UNIX, à travers des projets concrets à difficulté progressive.</p>
+            <div class="extra-content">
+                <h4>Libft</h4>
+                <h5>🎓 Objectif pédagogique</h5>
+                <ul>
+                    <li>Reproduire le code des fonctions de la librairei standard.</li>
+                    <li>Comprendre la manipulation des chaînes de caractères et pointeurs.</li>
+                    <li>Maîtriser les bases de la compilation modulaire avec un Makefile.</li>
+                </ul>
+                <h5>Fonctions codées</h5>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4>Ft_printf</h4>
+                <h5>🎓 Objectif pédagogique</h5>
+                <ul>
+                    <li>Apprendre à gérer les fonctions variadiques (dont le nombre d'argument peut varier à chaque appel).</li>
+                    <li>Manipuler des arguments de manière dynamique avec <code>va_list</code>.</li>
+                    <li>Renforcer la rigueur du parsing et de l'affichage formaté.</li>
+                </ul>
+                <h4>Get_next_line</h4>
+                <h5>🎓 Objectif pédagogique</h5>
+                <ul>
+                    <li>Approfondir la gestion fine de la mémoire (allocations, libérations), la manipulation de buffer et la lecture incrémentale.</li>
+                    <li>Découvrir les outils de diagnostic comme <code>perror</code>.</li>
+                </ul>
+                <h4>Born to be root</h4>
+                <h5>🎓 Objectif pédagogique</h5>
+                <ul>
+                    <li>S'initier à l'administration système en configurant une machine virtuelle sous Linux.</li>
+                    <li>Découvrir la gestion utilisateurs, des droits, des services et de l'automatisation via <code>cron</code>.</li>
+                </ul>
+                <h4>Pipex</h4>
+                <h5>🎓 Objectifs Pédagogiques</h5>
+                <ul>
+                    <li>Comprendre le fonctionnement des pipes Unix et la redirection des <em>file descriptors</em>.</li>
+                    <li>Apprendre à chaîner plusieurs processus pour reproduire un comportement de type shell (ex : <code>ls | grep .c</code>).</li>
+                </ul>
+            </div>
+        </div>
 
     </section>
 
