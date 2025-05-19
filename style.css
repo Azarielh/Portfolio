@@ -276,13 +276,14 @@ footer {
 }
 
 /* Colonne gauche : titre */
-.libft-title {
+.subproject-title {
   flex: 0 0 25%; /* % de la largeur du parent */
   min-width: 100px;
   max-width: 150px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 2.5vw;
-  padding-top: 20%;
+  padding-topproject
+  margin: 0;
   color: #2a2a2a;
 }
 
