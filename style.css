@@ -265,16 +265,32 @@ footer {
         max-height: 40px;
     }
 }
+/* Conteneur principal : Flex horizontal */
+.libft-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Colonne gauche : titre */
+.libft-title {
+  flex-shrink: 0;
+  min-width: 100px;
+  max-width: 150px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
 
 /* ====== Bloc général ====== */
 .project-libft {
-  margin-top: 20px;
+flex-grow: 1;
   background-color: #1e1e2f;
-  color: #f0f0f0;
-  border-radius: 10px;
   padding: 15px;
-  font-family: 'Consolas', 'Courier New', monospace;
-  position: relative;
+  border-radius: 10px;
+  color: #f0f0f0;
 }
 
 /* ====== Description (gauche) ====== */
