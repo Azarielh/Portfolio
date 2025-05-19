@@ -125,7 +125,7 @@ section {
 }
 
 .short_description {
-    display: flex;
+    display: flexbox;
 }
 /*__________Hide while project class is non active__________*/
 .extra-content {
