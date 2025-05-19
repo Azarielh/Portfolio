@@ -124,6 +124,7 @@ section {
     height: auto;
 }
 
+.project
 .short_description {
     display: flexbox;
 }
@@ -265,3 +266,94 @@ footer {
     }
 }
 
+/* ====== Bloc général ====== */
+.project-libft {
+  margin-top: 20px;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  position: relative;
+}
+
+/* ====== Description (gauche) ====== */
+.libft-description p {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: #dcdcdc;
+}
+
+/* ====== Catégories (barre horizontale) ====== */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.category-list span {
+  background-color: #2e2e3f;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.85rem;
+}
+
+.category-list span:hover {
+  background-color: #3f3f5f;
+}
+
+/* ====== Bloc de fonctions (menu horizontal) ====== */
+.function-display {
+  background-color: #2a2a3a;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.function-menu {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.func-btn {
+  background-color: #383850;
+  color: #eee;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+  font-size: 0.8rem;
+}
+
+.func-btn:hover {
+  background-color: #505070;
+}
+
+/* ====== Bloc de code style Discord ====== */
+.code-block {
+  background-color: #1e1e2f;
+  color: #c0c0c0;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  border-left: 4px solid #5865f2; /* Couleur Discord */
+}
+
+/* Optional: scrollbar fine */
+.code-block::-webkit-scrollbar {
+  height: 6px;
+}
+
+.code-block::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
