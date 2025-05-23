@@ -74,7 +74,7 @@ section {
 }
 
 /*__________Set style for all h3 in project class__________*/
-.project h3 {
+.project h1 {
     position: relative;
     margin: 0;
     margin-bottom: 10px; /* Adjust if needed for spacing */
@@ -125,7 +125,7 @@ section {
 }
 
 .short_description {
-    display: inline;
+    display:inline-block;
 }
 /*__________Hide while project class is non active__________*/
 .extra-content {
