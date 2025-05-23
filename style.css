@@ -77,7 +77,7 @@ section {
 .project h1 {
     position: relative;
     font-family: 'Consolas', 'Courrier New', monospace;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
     margin-bottom: 5vh; /* Adjust if needed for spacing */
 }
