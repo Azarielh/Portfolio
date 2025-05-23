@@ -126,7 +126,9 @@ section {
 
 .project
 .short_description {
-    display: flexbox;
+    display: flow;
+    margin-top: -4vh;
+    width: fit-content;
 }
 /*__________Hide while project class is non active__________*/
 .extra-content {
