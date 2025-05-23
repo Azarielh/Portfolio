@@ -76,9 +76,10 @@ section {
 /*__________Set style for all h3 in project class__________*/
 .project h1 {
     position: relative;
-    font-size: large;
+    font-family: 'Consolas', 'Courrier New', monospace;
+    font-size: 10rem;
     margin: 0;
-    margin-bottom: 1.5vh; /* Adjust if needed for spacing */
+    margin-bottom: 5vh; /* Adjust if needed for spacing */
 }
 
 /*__________Add a line separator between project title and their description__________*/
@@ -125,9 +126,9 @@ section {
     height: auto;
 }
 
-.short_description {
+/* .short_description {
     display:inline-block;
-}
+} */
 /*__________Hide while project class is non active__________*/
 .extra-content {
     display: none; /* Caché par défaut */
