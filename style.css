@@ -84,30 +84,32 @@ section {
 
 /*__________Add a line separator between project title and their description__________*/
 .bottom_line {
+    height: 4px;
+    width: 100%;
+    background-color: #0c0c0c;
+    margin: 0 auto;
     position: relative;
-    margin-top: 0.5%;
-    width: 78%;
-    height: 1px; /* Thickness of the line */
-    background: black;
-    z-index: 0; /* Make sure it's behind the text */
+    z-index: 1;
 }
 
 .project-content {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
 }
 
 .title-and-languages {
-    display: flex;
+    text-align: center;
+    /*display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 5%;
+    padding-bottom: 5%;*/
 /* ensure logos are keep on the right side*/
-    width: 100%;
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
+    /*width: 100%;*/
+    /*width: -moz-available;*/         /* WebKit-based browsers will ignore this. */
+    /*width: -webkit-fill-available;*/  /* Mozilla-based browsers will ignore this. */
+    /*width: fill-available;*/
 }
 
 .logo_languages {
