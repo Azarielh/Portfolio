@@ -76,8 +76,9 @@ section {
 /*__________Set style for all h3 in project class__________*/
 .project h1 {
     position: relative;
+    font-size: large;
     margin: 0;
-    margin-bottom: 10px; /* Adjust if needed for spacing */
+    margin-bottom: 1.5vh; /* Adjust if needed for spacing */
 }
 
 /*__________Add a line separator between project title and their description__________*/
