@@ -85,7 +85,7 @@ section {
 /*__________Add a line separator between project title and their description__________*/
 .bottom_line {
     position: relative;
-    margin-top: 1%;
+    margin-top: 0.5%;
     width: 78%;
     height: 1px; /* Thickness of the line */
     background: black;
@@ -127,7 +127,7 @@ section {
 }
 
 .short_description {
-    margin-top: 1%;
+    margin-top: 0.5%;
 }
 
 /*__________Hide while project class is non active__________*/
