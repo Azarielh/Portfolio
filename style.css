@@ -74,42 +74,38 @@ section {
 }
 
 /*__________Set style for all h3 in project class__________*/
-.project h1 {
+.project h3 {
     position: relative;
-    font-family: 'Consolas', 'Courrier New', monospace;
-    font-size: 2rem;
     margin: 0;
-    margin-bottom: 5vh; /* Adjust if needed for spacing */
+    margin-bottom: 10px; /* Adjust if needed for spacing */
 }
 
 /*__________Add a line separator between project title and their description__________*/
 .bottom_line {
-    height: 4px;
-    width: 100%;
-    background-color: #0c0c0c;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    margin-top: 1%;
+    width: 78%;
+    height: 1px; /* Thickness of the line */
+    background: black;
+    z-index: 0; /* Make sure it's behind the text */
 }
 
 .project-content {
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: space-between;
 }
 
 .title-and-languages {
-    text-align: center;
-    /*display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 5%;*/
+    padding-bottom: 5%;
 /* ensure logos are keep on the right side*/
-    /*width: 100%;*/
-    /*width: -moz-available;*/         /* WebKit-based browsers will ignore this. */
-    /*width: -webkit-fill-available;*/  /* Mozilla-based browsers will ignore this. */
-    /*width: fill-available;*/
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
 }
 
 .logo_languages {
@@ -128,10 +124,10 @@ section {
     height: auto;
 }
 
+.project
 .short_description {
-    margin-top: 0.5%;
+    display: flexbox;
 }
-
 /*__________Hide while project class is non active__________*/
 .extra-content {
     display: none; /* Caché par défaut */
