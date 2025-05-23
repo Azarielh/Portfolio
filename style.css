@@ -84,7 +84,7 @@ section {
 
 /*__________Add a line separator between project title and their description__________*/
 .bottom_line {
-    position: absolute;
+    position: relative;
     margin-top: 1%;
     width: 78%;
     height: 1px; /* Thickness of the line */
