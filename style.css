@@ -78,6 +78,9 @@ section {
     position: relative;
     margin: 0;
     margin-bottom: 10px; /* Adjust if needed for spacing */
+    font-family: 'Consolas', 'Courrier New', monospace;
+    font-size: 1rem;
+
 }
 
 /*__________Add a line separator between project title and their description__________*/
