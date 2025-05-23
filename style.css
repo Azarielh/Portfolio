@@ -124,9 +124,8 @@ section {
     height: auto;
 }
 
-.project
 .short_description {
-    display: flexbox;
+    display: inline;
 }
 /*__________Hide while project class is non active__________*/
 .extra-content {
