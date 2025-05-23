@@ -126,9 +126,9 @@ section {
     height: auto;
 }
 
-/* .short_description {
-    display:inline-block;
-} */
+.short_description {
+    display:inline-flex;
+}
 
 /*__________Hide while project class is non active__________*/
 .extra-content {
