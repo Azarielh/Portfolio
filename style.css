@@ -77,9 +77,9 @@ section {
 .project h3 {
     position: relative;
     margin: 0;
-    margin-bottom: 10px; /* Adjust if needed for spacing */
+    margin-bottom: 2vw; /* Adjust if needed for spacing */
     font-family: 'Consolas', 'Courrier New', monospace;
-    font-size: 3rem;
+    font-size: 2.9rem;
 
 }
 
@@ -116,6 +116,7 @@ section {
     width:max-content;
     padding: 5%;
     z-index: 1; /* Mettre le logo par-dessus la ligne de séparation*/
+    margin-bottom: 2vh;
 }
 
 .project-logo {
