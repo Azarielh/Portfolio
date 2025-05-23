@@ -77,7 +77,7 @@ section {
 .project h1 {
     position: relative;
     font-family: 'Consolas', 'Courrier New', monospace;
-    font-size: 10rem;
+    font-size: 3rem;
     margin: 0;
     margin-bottom: 5vh; /* Adjust if needed for spacing */
 }
@@ -129,6 +129,7 @@ section {
 /* .short_description {
     display:inline-block;
 } */
+
 /*__________Hide while project class is non active__________*/
 .extra-content {
     display: none; /* Caché par défaut */
