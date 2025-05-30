@@ -121,7 +121,7 @@ section {
 
 .project-logo {
     height:5vw;
-    z-index: 0;
+    z-index: -1;
 }
 
 /*__________Adapt height when project class is active___________*/
