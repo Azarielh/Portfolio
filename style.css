@@ -415,8 +415,8 @@ ________________________________________________
   position: absolute;
   bottom: 8px;   /* espace depuis le bas */
   right: 8px;    /* espace depuis la droite */
-  width: 1%;   /* taille du logo */
-  height: 1%;
+  width: 24px;   /* taille du logo */
+  height: 24px;
   display: block;
   opacity: 0.7;
   transition: opacity 0.3s ease;
@@ -424,8 +424,8 @@ ________________________________________________
 }
 
 .github-link img {
-    width: 1%;
-    height: 1%;
+    width: 50%;
+    height: 50%;
 }
 
 .github-link:hover {
