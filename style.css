@@ -387,3 +387,26 @@ footer {
   background: #444;
   border-radius: 3px;
 }
+
+/* 
+_______________  Img in list  __________________
+________________________________________________
+*/
+
+.item-image-text {
+  display: flex;
+  align-items: center;      /* centre verticalement image + texte */
+  gap: 12px;                /* espace entre image et texte */
+}
+
+.item-image-text img {
+  max-width: 150px;         /* largeur max de l'image */
+  max-height: 100px;        /* hauteur max */
+  width: auto;
+  height: auto;
+  object-fit: contain;      /* pour garder proportions */
+}
+
+.item-image-text p {
+  margin: 0;                /* supprime marge par défaut */
+}
