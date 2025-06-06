@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 <body>
@@ -37,7 +40,6 @@
                     </div>
                 </div>
                 <div class="bottom_line"></div>
-                <p class="short_description">Projet perso, ce bot discord est né de la volonté d'aider les rolistes à connaître et dévelloper leur personnage tout en enrichissant leur connaissance de l'univers dans lequel ils jouent.</p>
                 <div class="hexagon-container">
                     <div class="hexagon">
                         <img src="Assets/icone_deepCharacter.jfif" alt="Logo de Deep-Character" class="project-image">
@@ -45,6 +47,7 @@
                     </div>
                 </div>
             </div>
+            <p class="short_description">Projet perso, ce bot discord est né de la volonté d'aider les rolistes à connaître et dévelloper leur personnage tout en enrichissant leur connaissance de l'univers dans lequel ils jouent.</p>
             <div class="extra-content">
                 <h4>Technologies utilisées</h4>
                 <ul>
@@ -65,7 +68,7 @@
         <div class="project" onclick="expandProject(this)">
             <div class="project-content">
                 <div class="title-and-languages">
-                    <h3>Tableau de suivi</h3>
+                    <h3>Tableur de suivi</h3>
                     <div class="logo_languages">
                         <img src="Assets/logo_js.svg" alt="Logo de langages js" class="project-logo">
                         <img src="Assets/logo_AppScript.png" alt="Logo de AppScript" class="project-logo">
@@ -143,40 +146,67 @@
             </div>
             <p class="short_description">Sélectionné à la piscine du mois d'Aout 2024, j'ai démarré mon cursus 42 au mois de novembre de la même année en parrallèle de mon travail au centre Tumo. Le cursus 42 m’offre l’opportunité d’explorer en profondeur les rouages du langage C et du fonctionnement bas niveau d’un système UNIX, à travers des projets concrets à difficulté progressive.</p>
             <div class="extra-content">
-                <h4>Libft</h4>
+                <div class="libft-wrapper">
+                    <div class="libft-description">
+                        <span class="subproject-title">Libft</span>
+                        <p>Créer sa librairie personnelle.</p>
+                    </div>
+                    <div class="project-libft">
+                        <div class="libft-header" onclick="toggleCategories(this)">
+                            
+                            <div class="category-list">
+                                <span onclick="showFunction('boolean')">Boolean</span>
+                                <span onclick="showFunction('conversion')">Conversion</span>
+                                <span onclick="showFunction('finder')">Recherche</span>
+                                <span onclick="showFunction('list')">Liste</span>
+                                <span onclick="showFunction('memory')">Mémoire</span>
+                                <span onclick="showFunction('output')">Afficher</span>
+                                <span onclick="showFunction('str_analysis')">Analyse de chaînes</span>
+                                <span onclick="showFunction('str_manipulation')">Manipulation de chaîne</span>
+                            </div>
+                        </div>
+                        <div class="function-display">
+                            <div class="function-menu">
+                                <button class="func-btn">ft_isalpha</button>
+                                <button class="func-btn">ft_isdigit</button>
+                                <button class="func-btn">are_you_1_of_you</button>
+                            </div>
+                            <pre class="code-block"><code>
+                                // Example : ft_isalpha
+                                int ft_isalpha(int c)
+                                {
+                                    return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+                                }
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
                 <h5>🎓 Objectif pédagogique</h5>
                 <ul>
                     <li>Reproduire le code des fonctions de la librairei standard.</li>
                     <li>Comprendre la manipulation des chaînes de caractères et pointeurs.</li>
                     <li>Maîtriser les bases de la compilation modulaire avec un Makefile.</li>
                 </ul>
-                <h5>Fonctions codées</h5>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <h4>Ft_printf</h4>
+                <h4 class="subproject-title">Ft_printf</h4>
                 <h5>🎓 Objectif pédagogique</h5>
                 <ul>
                     <li>Apprendre à gérer les fonctions variadiques (dont le nombre d'argument peut varier à chaque appel).</li>
                     <li>Manipuler des arguments de manière dynamique avec <code>va_list</code>.</li>
                     <li>Renforcer la rigueur du parsing et de l'affichage formaté.</li>
                 </ul>
-                <h4>Get_next_line</h4>
+                <h4 class="subproject-title">Get_next_line</h4>
                 <h5>🎓 Objectif pédagogique</h5>
                 <ul>
                     <li>Approfondir la gestion fine de la mémoire (allocations, libérations), la manipulation de buffer et la lecture incrémentale.</li>
                     <li>Découvrir les outils de diagnostic comme <code>perror</code>.</li>
                 </ul>
-                <h4>Born to be root</h4>
+                <h4 class="subproject-title">Born to be root</h4>
                 <h5>🎓 Objectif pédagogique</h5>
                 <ul>
                     <li>S'initier à l'administration système en configurant une machine virtuelle sous Linux.</li>
                     <li>Découvrir la gestion utilisateurs, des droits, des services et de l'automatisation via <code>cron</code>.</li>
                 </ul>
-                <h4>Pipex</h4>
+                <h4 class="subproject-title">Pipex</h4>
                 <h5>🎓 Objectifs Pédagogiques</h5>
                 <ul>
                     <li>Comprendre le fonctionnement des pipes Unix et la redirection des <em>file descriptors</em>.</li>
