@@ -420,7 +420,12 @@ ________________________________________________
   display: block;
   opacity: 0.7;
   transition: opacity 0.3s ease;
-  z-index: 1;
+  z-index: 0;
+}
+
+.github-link img {
+    width: 24px;
+    height: 24px;
 }
 
 .github-link:hover {
