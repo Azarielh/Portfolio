@@ -415,8 +415,8 @@ ________________________________________________
   position: absolute;
   bottom: 8px;   /* espace depuis le bas */
   right: 8px;    /* espace depuis la droite */
-  width: 24px;   /* taille du logo */
-  height: 24px;
+  width: 9vh;   /* taille du logo */
+  height: 9vh;
   display: block;
   opacity: 0.7;
   transition: opacity 0.3s ease;
