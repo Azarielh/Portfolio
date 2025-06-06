@@ -410,3 +410,18 @@ ________________________________________________
 .item-image-text p {
   margin: 0;                /* supprime marge par défaut */
 }
+
+.github-link {
+  position: absolute;
+  bottom: 8px;   /* espace depuis le bas */
+  right: 8px;    /* espace depuis la droite */
+  width: 24px;   /* taille du logo */
+  height: 24px;
+  display: block;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.github-link:hover {
+  opacity: 1;
+}
