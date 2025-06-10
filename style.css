@@ -400,8 +400,8 @@ ________________________________________________
 }
 
 .item-image-text img {
-  max-width: 50vh;         /* largeur max de l'image */
-  max-height: 50vh;        /* hauteur max */
+  max-width: 80vh;         /* largeur max de l'image */
+  max-height: 80vh;        /* hauteur max */
   width: auto;
   height: auto;
   object-fit: contain;      /* pour garder proportions */
