@@ -188,9 +188,10 @@
             </div>
             <p class="short_description">Sélectionné à la piscine du mois d'Aout 2024, j'ai démarré mon cursus 42 au mois de novembre de la même année en parrallèle de mon travail au centre Tumo. Le cursus 42 m’offre l’opportunité d’explorer en profondeur les rouages du langage C et du fonctionnement bas niveau d’un système UNIX, à travers des projets concrets à difficulté progressive.</p>
             <div class="extra-content">
-                <h4 class="subproject-title">Libft</h4>
+                <div class="subproject">
+                    <h4 class="subproject-title">Libft</h4>
 
-                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%;"><ul style="float:left; padding-left: 20px;">
+                    <div style="display:flex; margin: auto; margin-top: 2%;"><ul style="float:left;">
                             <li>Reproduire le code des fonctions de la librairei standard.</li>
                             <li>Comprendre la manipulation des chaînes de caractères et pointeurs.</li>
                             <li>Maîtriser les bases de la compilation modulaire avec un Makefile.</li>
@@ -260,17 +261,18 @@ size_t	ft_putnbr_fd(int nb, int fd)
 	return (len);
 }
                         </code>
-                    </div>
-                <h4 class="subproject-title">Ft_printf</h4>
+                    </div></div>
+                <div class="subproject">
+                    <h4 class="subproject-title">Ft_printf</h4>
 
-                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%;"><ul style="float:left; padding-left: 20px;">
+                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
                             <li>Apprendre à gérer les fonctions variadiques (dont le nombre d'argument peut varier à chaque appel).</li>
                             <li>Manipuler des arguments de manière dynamique avec <code>va_list</code>.</li>
                             <li>Renforcer la rigueur du parsing et de l'affichage formaté.</li>
                         </ul>
                         <code class="code-block">
 // Ce projet à nécessité la création sur mesure
-// de plusieurs fonctions.
+// de plusieurs fonctions de convertion
 // Vous verrez ici quelques exemple
 // Pour en voir plus <a href="https://github.com/Azarielh/42/tree/main/printf">cliquer ici</a>
 // int	select_flag_n_print(char flag, va_list args)
@@ -303,25 +305,95 @@ size_t	ft_putnbr_fd(int nb, int fd)
 }
                         </code>
                     </div>
+                </div>
 
                 <h4 class="subproject-title">Get_next_line</h4>
-                <h5>🎓 Objectif pédagogique</h5>
-                <ul>
-                    <li>Approfondir la gestion fine de la mémoire (allocations, libérations), la manipulation de buffer et la lecture incrémentale.</li>
-                    <li>Découvrir les outils de diagnostic comme <code>perror</code>.</li>
-                </ul>bv  
+                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                        <li>Approfondir la gestion fine de la mémoire (allocations, libérations), la manipulation de buffer et la lecture incrémentale.</li>
+                        <li>Découvrir les outils de diagnostic comme <code>perror</code>.</li>
+                        </ul>
+                        <code class="code-block"> 
+// Pour en voir plus <a href="https://github.com/Azarielh/42/tree/main/gnl">Cliquez ici</a>
+// Quelques fonctions qui compose le projet
+// get_next_line : est l'entrée du programme. C'est elle qui valide les arguments de départ avant de distribuer le travail aux autres fonctions.
+
+char	*get_next_line(int fd)
+{
+	static char	*stack;
+	char		*buffer;
+	char		*line;
+
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
+	buffer = (char *)ft_cal_z(BUFFER_SIZE + 1, sizeof(char));
+	if (!buffer)
+		return (NULL);
+	stack = read_line(fd, stack, buffer);
+	free(buffer);
+	if (!stack)
+		return (NULL);
+	line = extract_line(&stack);
+	return (line);
+}
+                        </code>
+                    </div>
+
                 <h4 class="subproject-title">Born to be root</h4>
-                <h5>🎓 Objectif pédagogique</h5>
-                <ul>
-                    <li>S'initier à l'administration système en configurant une machine virtuelle sous Linux.</li>
-                    <li>Découvrir la gestion utilisateurs, des droits, des services et de l'automatisation via <code>cron</code>.</li>
-                </ul>
+                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                            <li>S'initier à l'administration système en configurant une machine virtuelle sous Linux.</li>
+                            <li>Découvrir la gestion utilisateurs, des droits, des services et de l'automatisation via <code>cron</code>.</li>
+                        </ul>
+                        <code class="code-block">
+
+                        </code>
+                    </div>
+
                 <h4 class="subproject-title">Pipex</h4>
                 <h5>🎓 Objectifs Pédagogiques</h5>
-                <ul>
-                    <li>Comprendre le fonctionnement des pipes Unix et la redirection des <em>file descriptors</em>.</li>
-                    <li>Apprendre à chaîner plusieurs processus pour reproduire un comportement de type shell (ex : <code>ls | grep .c</code>).</li>
-                </ul>
+                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                            <li>Comprendre le fonctionnement des pipes Unix et la redirection des <em>file descriptors</em>.</li>
+                            <li>Apprendre à chaîner plusieurs processus pour reproduire un comportement de type shell (ex : <code>ls | grep .c</code>).</li>
+                        </ul>
+                        <code class="code-block">
+// Pour en voir plus <a href="https://github.com/Azarielh/42/tree/main/pipex">Cliquez ici</a>
+// Quelques fonctions qui compose le projet
+
+int	main(int argc, char **argv, char **envp)
+{
+	int		i;
+	t_pipex	pipex;
+	int		status;
+	pid_t	pid;
+	pid_t	last_pid;
+	int		exitcode;
+
+	if (argc < 5)
+        print_error("Usage: ./pipex file1 cmd1 cmd2 file2\n", 1);
+	i = 2;
+	pipex.infile_name = argv[1];
+	pipex.flags = O_WRONLY | O_CREAT | O_TRUNC;
+	check_here_doc(argc, argv, &pipex, &i);
+	int fd_in = open_files(&pipex, argc, argv);
+	while (i < argc - 2)
+	{
+		create_child(argv[i], envp, fd_in);
+		i++;
+	}
+	last_pid = last_command(argc, argv, envp, pipex);
+	pid = 0;
+	exitcode = 1;
+	while (pid != -1)
+	{
+		pid = wait(&status);
+		if (pid == last_pid && WIFEXITED(status))
+			exitcode = WEXITSTATUS(status);
+		if (pid == last_pid && WIFSIGNALED(status))
+			exitcode = 128 + WTERMSIG(status);
+	}
+	return (exitcode);
+}
+                        </code>
+                    </div>
             </div>
             <a href="https://github.com/Azarielh/42" target="_blank" class="github-link" aria-label="Lien GitHub">
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />

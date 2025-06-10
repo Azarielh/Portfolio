@@ -242,17 +242,7 @@ h1 a:hover {
 .inline_list li {
     display: inline;
 }
-code {
-    background-color: #2f3136;
-    text-decoration-line: none;
-    color: #dcddde;
-    font-family: 'Consolas', 'Courrier New', monospace;
-    font-size: 0.8rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    line-height: 1;
-    white-space: pre-wrap;
-}
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -274,8 +264,7 @@ footer {
     }
 }
 
-
-/* Colonne gauche : titre */
+ /* Colonne gauche : titre */
 .subproject-title {
   flex: 0 0 25%; /* % de la largeur du parent */
   min-width: 100px;
@@ -287,18 +276,6 @@ footer {
   color: #2a2a2a;
 }
 
-
-
-/* ====== Bloc général ====== */
-.project-libft {
-  flex-grow: 1;
-  background-color: #1e1e2f;
-  padding: 2%;
-  border-radius: 10px;
-  color: #f0f0f0;
-  max-width: 72%;
-}
-
 /* ====== Description (gauche) ====== */
 .libft-description p {
   margin: 0 5% 0 0;
@@ -306,6 +283,15 @@ footer {
   color: #1f1e1e;
 }
 
+.subproject {
+    border-bottom: #3110aa solid 2px;
+    padding-bottom: 2vh;
+}
+
+.subproject:hover {
+    background: #a5a5be;
+    z-index: 10;
+}
 /* ====== Catégories (barre horizontale) ====== */
 .category-list {
   display: flex;
@@ -328,16 +314,29 @@ footer {
 }
 
 /* ====== Bloc de code style Discord ====== */
-.code-block {
+code {
+    background-color: #2f3136;
+    text-decoration-line: none;
+    padding: 4px;
+    color: #dcddde;
+    font-family: 'Consolas', 'Courrier New', monospace;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    line-height: 1;
+    white-space: pre-wrap;
+}
+
+ul + .code-block {
     background-color: #1e1e2f;
-    position: relative;
+    float:  right;
+    position:sticky;
     text-decoration-line: none;
     color: #c0c0c0;
-    width: 500px;
     height: 25vh;
     overflow: scroll;
     padding-left: 1%;
-    margin-block-end: auto;
+    /*margin-block-end: auto;*/
     border-radius: 6px;
     overflow-x: scroll;
     font-size: 0.85rem;
@@ -346,6 +345,11 @@ footer {
     border-left: 4px solid #5865f2;
 }
 
+.list, .code {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
 /* Optional: scrollbar fine */
 .code-block::-webkit-scrollbar {
   height: 6px;
