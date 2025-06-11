@@ -1,6 +1,7 @@
 /*__________Général__________*/
 body {
     font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,8 +65,8 @@ section {
     transition: all 0.5s ease;
     overflow: visible;
     width : 100%;
-    max-width: 1000px;
-
+    height: auto;
+    max-width: 70vw;
 }
 
 /*__________Switch background color while hovering__________*/
@@ -112,11 +113,14 @@ section {
 }
 
 .logo_languages {
-    position: relative;
-    width:max-content;
-    padding: 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; 
+    padding: 0;
     z-index: 1; /* Mettre le logo par-dessus la ligne de séparation*/
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
+    flex-wrap: nowrap;
 }
 
 .project-logo {
@@ -129,11 +133,9 @@ section {
     height: auto;
 }
 
-.project
 .short_description {
-    display: flow;
-    margin-top: -4vh;
-    width: fit-content;
+    padding-top: 3%;
+    width: 70%;
 }
 /*__________Hide while project class is non active__________*/
 .extra-content {
@@ -250,19 +252,19 @@ footer {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .project-logo {
-        max-width: 50px;  /* Réduire la taille des logos sur les écrans plus petits */
+        max-width: 50px;  /* Réduire la taille des logos sur les écrans plus petits *//*
         max-height: 50px;
     }
-}
+} */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .project-logo {
-        max-width: 25px;  /* Réduire encore plus sur les petits écrans */
+        max-width: 25px;  /* Réduire encore plus sur les petits écrans *//*
         max-height: 25px;
     }
-}
+} */
 
  /* Colonne gauche : titre */
 .subproject-title {
