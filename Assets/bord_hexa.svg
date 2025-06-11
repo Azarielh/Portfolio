@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 173" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Projet" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <clipPath id="hexClipProject">
+      <polygon points="100,0 200,43.3 200,129.9 100,173.2 0,129.9 0,43.3"></polygon>
+    </clipPath>
+  </defs>
+
+  <!-- Fond de l'hexagone -->
+  <polygon points="100,0 200,43.3 200,129.9 100,173.2 0,129.9 0,43.3" fill="#a5a5be"></polygon>
+
+  <!-- Image clipée -->
+  <image href="Assets/projet1.png" width="200" height="173" clip-path="url(#hexClipProject)" preserveAspectRatio="xMidYMid slice"></image>
+
+  <!-- Bordure -->
+  <polygon points="100,0 200,43.3 200,129.9 100,173.2 0,129.9 0,43.3" fill="none" stroke="#1e1e2f" stroke-width="6"></polygon>
+</svg>
