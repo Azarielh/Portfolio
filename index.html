@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link rel="expandProject" href="expand.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 <body>
@@ -24,11 +24,11 @@
 
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Je suis un développeur passionné et étudiant à 42 Lyon, avec une expérience dans la création de bot discord et le désir d'étendre mes compétences à d'autres languages et domaines d'applications.</p>
+        <p>Je suis un développeur passionné et étudiant à 42 Lyon, avec une expérience dans la création de bot discord et le désir d'étendre mes compétences à d'autres languages, framework et domaines d'applications.</p>
     </section>
 
     <section id="projects">
-        <h2>Mes Projets</h2>
+        <h1>Mes Projets</h1>
         <!--________DEEP CHARACTER________-->
         <div class="project" onclick="expandProject(this)">
             <div class="project-content">
@@ -39,22 +39,19 @@
                         <img src="Assets/logo_discord.png" alt="Logo de langages js" class="project-logo">
                     </div>
                 </div>
-                <div class="bottom_line"></div>
+                <div class="bottom_line">
+                    <p class="short_description">Projet perso, ce bot discord est né de la volonté d'aider les rolistes à connaître et dévelloper leur personnage tout en enrichissant leur connaissance de l'univers dans lequel ils jouent.</p>
+                </div>
                 <div class="hexagon-container">
                     <div class="hexagon">
-                        <img src="Assets/icone_deepCharacter.jfif" alt="Logo de Deep-Character" class="project-image">
+                        <img src="Assets/logo-DeepCharacter.svg" alt="Logo de Deep-Character" class="project-image">
                         <span class="coming-soon">À venir</span>
                     </div>
                 </div>
             </div>
-            <p class="short_description">Projet perso, ce bot discord est né de la volonté d'aider les rolistes à connaître et dévelloper leur personnage tout en enrichissant leur connaissance de l'univers dans lequel ils jouent.</p>
             <div class="extra-content">
-                <h4>Technologies utilisées</h4>
-                <ul>
-                    <li>Javascript</li><li>Discord.js</li><li>Javascript</li>
-                </ul>
                 <h4>Ajouter un nouveau prompt</h4>
-                <p>Grâce à cette fonctionnalité, chaque serveur pourra ajouter des prompts propre à leur univers.</p>
+                <p>Grâce à cette fonctionnalité, chaque serveur peut ajouter des prompts propre à leur univers.</p>
                 <img src="Assets/Deep_character_addrequest.png" alt="Démonstration de la fonction add qui permet d'ajouter un nouveau prompt dans le fichier json.">
                 <h4>Modifier un prompt éxistant</h4>
                 <p>Il était nécessaire d'ajouter une telle fonction afin de corriger de potentielles fautes qu'elle soit linguistique ou loristique.</p>                
@@ -63,8 +60,41 @@
                 <p>La fonction liste affiche les 10 premiers promts dans un embed message accompagné de bouton <span>'précédent'</span> et <span>'suivant'</span> permettant de naviguer dans la liste par bloc de 10.</p>
                 <img src="Assets/Deep_character_listerequest.png" alt="Démonstration de la fonction 'liste'. La fonction affiche un échantillon de 10 prompts si possible. A l'aide des boutons 'precedent' et 'suivant', on peut naviguer dans le fichier json.">
             </div>
+            <a href="https://github.com/Azarielh/Deep-Character" target="_blank" class="github-link" aria-label="Lien GitHub">
+                <img src="./Assets/Github_logo.png" alt="GitHub" />
+            </a>
+            <img class="expand_icon" src="./Assets/expand_icon.svg" alt="expand_icon"/>          
         </div>
-        <!--________Optimisation tableur________-->
+        <!--________TUMO LAB________-->
+        <!-- <div class="project" onclick="expandProject(this)">
+            <div class="project-content">
+                <div class="title-and-languages">
+                    <h3>TUMO LAB</h3>
+                    <div class="logo_languages">
+                        <img src="Assets/logo_js.svg" alt="Logo de langages js" class="project-logo">
+                    </div>
+                </div>
+                <div class="bottom_line">
+                    <p class="short_description">While exercing as a coach in Tumo, my interest for programming skills improved deeply. I invest some of my work time to do programming workshop on my own.</p>
+                </div>
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <img src="Assets/Logo TUMO.svg" alt="Logo de Tumo" class="project-image">
+                        <span class="coming-soon">À venir</span>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-content">
+                <h4>Lab 1</h4>
+                <p>contenu à venir</p>
+                <h4>Lab 2</h4>
+                <p>contenu à venir</p>
+                <h4>Lab 3</h4>
+                <p>contenu à venir</p>
+            </div>
+            <img class="expand_icon" src="./Assets/expand_icon.svg" alt="expand_icon"/>
+        </div> -->
+        <!--________  Optimisation tableur  ________-->
         <div class="project" onclick="expandProject(this)">
             <div class="project-content">
                 <div class="title-and-languages">
@@ -75,16 +105,18 @@
                         <img src="Assets/logo_sheets.png" alt="Logo de Google Sheets" class="project-logo">
                     </div>
                 </div>
-                <div class="bottom_line"></div>
+                <div class="bottom_line">
+                    <p class="short_description">Ce projet est dans une dynamique de dévellopement continu dans le cadre de mes fonctions de Coach de création numérique à Tumo.</p>
+                </div>
                 <div class="hexagon-container">
                     <div class="hexagon">
-                        <img src="" alt="" class="project-image">
+                        <img src="Assets/logo-tableur.svg" alt="Aperçu du tableur" class="project-image">
                         <span class="coming-soon">À venir</span>
                     </div>
                 </div>
             </div>
-            <p class="short_description">Ce projet est dans une dynamique de dévellopement continu dans le cadre de mes fonctions de Coach de création numérique à Tumo.</p>
             <div class="extra-content">
+                <div class="subproject">
                 <h4>Problème de départ</h4>
                 <ul>
                     <li>Informations nécessaire dispersées</li>
@@ -93,38 +125,129 @@
                     <li>Pas d'historique accessible, donc de visuel sur les changements de parcours/créneaux</li>
                     <li>Erreurs humaines</li>
                 </ul>
+                </div>
+                <div class="subproject">
                 <h4>Objectifs</h4>
                 <ul>
                     <li>Gagner du temps</li>
                     <li>Faciliter la lecture des données</li>
                     <li>Rendre l'outil accessible à tous</li>
                 </ul>
+                </div>
+                <div class="subproject">
                 <h4>Solutions mises en place</h4>
                 <ul>
                     <li>Refonte et factorisation du tableur via des formules avancées (INDEX, MATCH, QUERY…) pour limiter les doublons et réduire les erreurs humaines</li>
-                    <li>Développement de scripts automatisés : réinitialisation mensuelle de cases à cocher, envoi conditionnel d’emails, conversion de liens en affichage d’images</li>
                     <li>Création d’une interface claire, structurée et réutilisable par des utilisateurs non techniques</li>
+                    <li>Développement de scripts automatisés : réinitialisation mensuelle de cases à cocher, envoi conditionnel d’emails, conversion de liens en affichage d’images</li>
                 </ul>
+                </div>
+                <div class="subproject">
                 <h4>Solutions en cours de dévellopement ou en vue d'être dévellopées</h4>
                 <ul>
                     <li>(🛠️ <span class="badge in-progress">En cours</span>) ... Permettre un suivi au mois pour mieux repérer les changements dans le parcours des jeunes</li>
-                    <li>(🛠️ <span class="badge in-progress">En cours</span>) ... Script de mises à jour du tableur afin de profiter de la dernière version.</li>
+                    <li>(🛠️ <span class="badge in-progress">En cours</span>) ... Script de mises à jour du tableur afin de permettre aux usager une mise à jour facile vers la dernière version.</li>
                     <li>(🔜 <span class="badge planned">    Plannifié</span>) ... Automatisé l'import des données nécessaire</li>
                 </ul>
+                </div>
+                <div class="subproject">
                 <h4>Impact</h4>
                 <ul>
-                    <li>Un import simple de 4 tableaux depuis looker studio rassemble toutes les infos nécessaire au même endroit.
-                    <ul>
-                        <li>si prêt pour un lab même si pas inscrit</li>
-                        <li>slow learner or high learner</li>
-                        <li>domaines choisis</li>
-                        <li>ect...</li>
-                    </ul>
+                    <li>Un import simple de 4 tableaux depuis looker studio permet aux formules de rassembler toutes les infos nécessaire au même endroit.
+                        <div style="display:flex; margin: auto; align-items: center; margin-top: 2%;"><ul style="float:left; padding-left: 20px;">
+                            <li>Domaines choisis et statuts des pré-requis associés</li>
+                            <li>slow learner or high learner (représenter par un ratio)</li>
+                            <li>Si inscrit à un lab, affiche la date, même si c'est dans 6 mois.</li>
+                            <li>ect...</li>
+                        </ul>
+                        <img style="margin-left: 5%; float: right; max-width: 40%;" src="./Assets/annexes_view.png" alt="Animation"/></div>                       
+                    </li>
+                    <li style="list-style-type: none;">
+                        <img src="./Assets/sheets_view.png" alt="Animation" style="margin-top: 3%; max-width: 100%;"/>
+                    </li>                    
                     <li>Photo des jeunes dans le tableur à coté des informations de suivi avec respect du rgpd (elle ne sont pas stockés sur le tableur)</li>
                     <li>Outil utilisable sans connaissance approfondie du logiciel</li>
+                    <li class="item-image-text">
+                        <p>Envoi semi-automatique d'un mail pour se présenter en tant que coach au parents.</p>                        
+                        <img src="./Assets/auto-mail_sending2.gif" alt="Animation"/>
+                    </li>
 
                 </ul>
+                </div>
             </div>
+            <a href="https://docs.google.com/spreadsheets/d/17OSQgm8XFcDzUExjs-7_Z7NBvt0FjjQw53lLbhkIWWo/edit?usp=sharing" target="_blank" class="github-link" aria-label="Lien GitHub">
+                <img src="./Assets/logo_sheets.png" alt="GitHub" />
+            </a>
+            <img class="expand_icon" src="./Assets/expand_icon.svg" alt="expand_icon"/>           
+        </div>
+        <!--________  Optimus Chat  ________-->
+        <div class="project" onclick="expandProject(this)">
+            <div class="project-content">
+                <div class="title-and-languages">
+                    <h3>Optimus Chat</h3>
+                    <div class="logo_languages">
+                        <img src="Assets/logo_js.svg" alt="Logo JavaScript" class="project-logo">
+                        <img src="Assets/logo_ts.svg" alt="Logo Timescript.svg" class="project-logo">
+                        <img src="Assets/logo_bun.svg" alt="Logo Bun.svg" class="project-logo">
+
+                    </div>
+                </div>
+                <div class="bottom_line">
+                    <p class="short_description">Projet expérimental et collaboratif pour comprendre les fondamentaux d’une architecture client-serveur avec WebSocket. Ma mission se concentre sur l'aspect backend du projet.</p>
+                </div>
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <img src="Assets/logo_Optimus.svg" alt="Logo de Deep-Character" class="project-image">
+                        <span class="coming-soon">En ligne bientôt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-content">
+                <div class="subproject">
+                    <h4>Intention de départ</h4>
+                    <ul>
+                        <li>Apprendre à structurer un projet en frontend / backend</li>
+                        <li>Découvrir le fonctionnement des WebSockets pour la communication en temps réel</li>
+                        <li>Expérimenter la rapidité de Bun.js en tant que runtime backend</li>
+                    </ul>
+                </div>
+                <div class="subproject">
+                    <h4>Objectifs techniques</h4>
+                    <ul>
+                        <li>Mettre en place une communication temps réel stable</li>
+                        <li>Gérer dynamiquement les channels et les utilisateurs</li>
+                        <li>Clarifier les rôles entre frontend (affichage) et backend (logique)</li>
+                    </ul>
+                </div>
+                <div class="subproject">
+                    <h4>Fonctionnalités déjà en place</h4>
+                    <ul>
+                        <li>Envoi des messages avec horodatage et identifiant utilisateur</li>
+                        <li>Création et gestion des channels (rejoindre / quitter)</li>
+                        <li>Liste des utilisateurs transmise à chaque changement</li>
+                    </ul>
+                </div>
+                <div class="subproject">
+                    <h4>Prochaines étapes</h4>
+                    <ul>
+                        <li>(🛠️ <span class="badge in-progress">En cours</span>) ... Gestion d'envoi d'image en pièce jointe</li>
+                        <li>(🔜 <span class="badge planned">Plannifié</span>) ... Authentification et gestion de sessions</li>
+                        <li>(🔜 <span class="badge planned">Plannifié</span>) ... Ajout d’une interface d’administration des channels</li>
+                    </ul>
+                </div>
+                <div class="subproject">
+                    <h4>Apprentissages clés</h4>
+                    <ul>
+                        <li>Compréhension des flux de données entre client et serveur</li>
+                        <li>Utilisation concrète des WebSockets</li>
+                        <li>Travail en binôme avec répartition claire des responsabilités</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="https://github.com/Azarielh/Optimus_chat" target="_blank" class="github-link" aria-label="Lien GitHub">
+                <img src="./Assets/Github_logo.png" alt="GitHub" />
+            </a>
+            <img class="expand_icon" src="./Assets/expand_icon.svg" alt="expand_icon"/>
         </div>
         <!--________PROJET 42________-->
         <div class="project" onclick="expandProject(this)">
@@ -134,87 +257,232 @@
                     <div class="logo_languages">
                         <img src="Assets/logo_c.svg" alt="Logo de langages C" class="project-logo">
                         <img src="Assets/logo_VirtualBox.png" alt="Logo de Virtual Box" class="project-logo">
+                        <img src="Assets/logo_MakeFile.svg" alt="Logo de Virtual Box" class="project-logo">
                     </div>
                 </div>
-                <div class="bottom_line"></div>
+                <div class="bottom_line">
+                    <p class="short_description">Ma réussite à la piscine de l’école 42 (un bootcamp réputé pour sa rigueur) m’a permis de rejoindre un cursus exigeant, fondé sur l’apprentissage par la pratique et la collaboration.</p>
+                </div>
                 <div class="hexagon-container">
                     <div class="hexagon">
-                        <img src="Assets/logo_42.png" alt="Logo de 42" class="project-image">
+                        <img src="Assets/logo_42.svg" alt="Logo de 42" class="project-image">
+                        <!-- <img src="Assets/bord_hexa.svg" alt="bord_hexa" class="project-image"> -->
                         <span class="coming-soon">À venir</span>
                     </div>
                 </div>
             </div>
-            <p class="short_description">Sélectionné à la piscine du mois d'Aout 2024, j'ai démarré mon cursus 42 au mois de novembre de la même année en parrallèle de mon travail au centre Tumo. Le cursus 42 m’offre l’opportunité d’explorer en profondeur les rouages du langage C et du fonctionnement bas niveau d’un système UNIX, à travers des projets concrets à difficulté progressive.</p>
             <div class="extra-content">
-                <div class="libft-wrapper">
-                    <div class="libft-description">
-                        <span class="subproject-title">Libft</span>
-                        <p>Créer sa librairie personnelle.</p>
-                    </div>
-                    <div class="project-libft">
-                        <div class="libft-header" onclick="toggleCategories(this)">
-                            
-                            <div class="category-list">
-                                <span onclick="showFunction('boolean')">Boolean</span>
-                                <span onclick="showFunction('conversion')">Conversion</span>
-                                <span onclick="showFunction('finder')">Recherche</span>
-                                <span onclick="showFunction('list')">Liste</span>
-                                <span onclick="showFunction('memory')">Mémoire</span>
-                                <span onclick="showFunction('output')">Afficher</span>
-                                <span onclick="showFunction('str_analysis')">Analyse de chaînes</span>
-                                <span onclick="showFunction('str_manipulation')">Manipulation de chaîne</span>
-                            </div>
-                        </div>
-                        <div class="function-display">
-                            <div class="function-menu">
-                                <button class="func-btn">ft_isalpha</button>
-                                <button class="func-btn">ft_isdigit</button>
-                                <button class="func-btn">are_you_1_of_you</button>
-                            </div>
-                            <pre class="code-block"><code>
-                                // Example : ft_isalpha
-                                int ft_isalpha(int c)
-                                {
-                                    return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
-                                }
-                            </code></pre>
-                        </div>
+                <div class="subproject">
+                    <h4 class="subproject-title">Libft</h4>
+
+                    <div style="display:flex; margin: auto; margin-top: 2%;"><ul style="float:left;">
+                            <li>Reproduire le code des fonctions de la librairei standard.</li>
+                            <li>Comprendre la manipulation des chaînes de caractères et pointeurs.</li>
+                            <li>Maîtriser les bases de la compilation modulaire avec un Makefile.</li>
+                        </ul>
+                        <pre class="code-block">// Pour en voir plus, vous pouvez <a href="https://github.com/Azarielh/42/tree/main/libft">cliquer ici</a>
+// Voici un exemple de quelques fonctions réalisé 
+// dans ce projet.
+
+// Example :
+// ft_isalpha
+int ft_isalpha(int c)
+{
+    return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+}
+
+// ft_isascii
+int	ft_isascii(int c)
+{
+	return (c >= 0 && c <= 127);
+}
+
+// ft_atoi : Retourne la chaine de caractère donnée convertie en nombre
+int	ft_atoi(const char *str)
+{
+	long long	result;
+	int			sign;
+	int			i;
+
+	result = 0;
+	sign = 1;
+	i = 0;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+		if (str[i++] == '-')
+			sign = -1;
+	while (ft_isdigit(str[i]))
+	{
+		if (sign > 0 && result > (LLONG_MAX - (str[i] - '0')) / 10)
+			return (-1);
+		else if (sign < 0 && result > (LLONG_MAX - (str[i] - '0')) / 10)
+			return (0);
+		result = result * 10 + (str[i++] - '0');
+	}
+	return ((int)(result * sign));
+}
+
+// ft putnbr : Convertir un nombre en chaine de caractère puis l'imprimer
+size_t	ft_putnbr_fd(int nb, int fd)
+{
+	unsigned int	unb;
+	size_t			len;
+
+	len = 0;
+	if (nb < 0)
+	{
+		ft_putchar_fd('-', fd);
+		unb = -nb;
+		len++;
+	}
+	else
+		unb = nb;
+	if (unb >= 10)
+		len += ft_putnbr_fd(unb / 10, fd);
+	len += ft_putchar_fd((unb % 10) + '0', fd);
+	return (len);
+}
+</pre>
+                    </div></div>
+                <div class="subproject">
+                    <h4 class="subproject-title">Ft_printf</h4>
+
+                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                            <li>Apprendre à gérer les fonctions variadiques (dont le nombre d'argument peut varier à chaque appel).</li>
+                            <li>Manipuler des arguments de manière dynamique avec <code>va_list</code>.</li>
+                            <li>Renforcer la rigueur du parsing et de l'affichage formaté.</li>
+                        </ul>
+                        <code class="code-block">// Pour en voir plus <a href="https://github.com/Azarielh/42/tree/main/printf">cliquer ici</a>
+// Ce projet à nécessité la création sur mesure de plusieurs fonctions de convertion
+// Vous verrez ici quelques exemple
+// int	select_flag_n_print(char flag, va_list args)
+{
+	int				len;
+	unsigned long	tmp_ptr;
+
+	len = 0;
+	if (flag == '%')
+		len = ft_putchar_fd('%', 1);
+	if (flag == 'c')
+		len = ft_putchar_fd(va_arg(args, int), 1);
+	if (flag == 's')
+		len = ft_putstr_fd(va_arg(args, char *), 1);
+	if (flag == 'p')
+	{
+		tmp_ptr = va_arg(args, unsigned long);
+		if ((void *)tmp_ptr == NULL)
+			return (write(1, "(nil)", 5));
+		len = write(1, "0x", 2);
+		len += ft_puthex(tmp_ptr, flag);
+	}
+	if (flag == 'd' || flag == 'i')
+		len = ft_putnbr_fd(va_arg(args, int), 1);
+	if (flag == 'u')
+		len = ft_putnbr_deci(va_arg(args, unsigned int));
+	else if (flag == 'x' || flag == 'X')
+		len = ft_puthex(va_arg(args, unsigned int), flag);
+	return (len);
+}
+                        </code>
                     </div>
                 </div>
-                <h5>🎓 Objectif pédagogique</h5>
-                <ul>
-                    <li>Reproduire le code des fonctions de la librairei standard.</li>
-                    <li>Comprendre la manipulation des chaînes de caractères et pointeurs.</li>
-                    <li>Maîtriser les bases de la compilation modulaire avec un Makefile.</li>
-                </ul>
-                <h4 class="subproject-title">Ft_printf</h4>
-                <h5>🎓 Objectif pédagogique</h5>
-                <ul>
-                    <li>Apprendre à gérer les fonctions variadiques (dont le nombre d'argument peut varier à chaque appel).</li>
-                    <li>Manipuler des arguments de manière dynamique avec <code>va_list</code>.</li>
-                    <li>Renforcer la rigueur du parsing et de l'affichage formaté.</li>
-                </ul>
-                <h4 class="subproject-title">Get_next_line</h4>
-                <h5>🎓 Objectif pédagogique</h5>
-                <ul>
-                    <li>Approfondir la gestion fine de la mémoire (allocations, libérations), la manipulation de buffer et la lecture incrémentale.</li>
-                    <li>Découvrir les outils de diagnostic comme <code>perror</code>.</li>
-                </ul>
-                <h4 class="subproject-title">Born to be root</h4>
-                <h5>🎓 Objectif pédagogique</h5>
-                <ul>
-                    <li>S'initier à l'administration système en configurant une machine virtuelle sous Linux.</li>
-                    <li>Découvrir la gestion utilisateurs, des droits, des services et de l'automatisation via <code>cron</code>.</li>
-                </ul>
-                <h4 class="subproject-title">Pipex</h4>
-                <h5>🎓 Objectifs Pédagogiques</h5>
-                <ul>
-                    <li>Comprendre le fonctionnement des pipes Unix et la redirection des <em>file descriptors</em>.</li>
-                    <li>Apprendre à chaîner plusieurs processus pour reproduire un comportement de type shell (ex : <code>ls | grep .c</code>).</li>
-                </ul>
-            </div>
-        </div>
+                <div class="subproject">
+                    <h4 class="subproject-title">Get_next_line</h4>
+                        <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                            <li><h4>Objectifs</h4>
+                                <p>Créer une fonction capable de lire un fichier et de se souvenir où elle est dans le fichier tant que le file dirrector n'a pas été fermé</p></li>
+                            <li>Approfondir la gestion fine de la mémoire (allocations, libérations), la manipulation de buffer et la lecture incrémentale.</li>
+                            <li>Découvrir les outils de diagnostic comme <code>perror</code>.</li>
+                        </ul>
+                        <code class="code-block">// Pour en voir plus <a href="https://github.com/Azarielh/42/tree/main/gnl">Cliquez ici</a>
+// Quelques fonctions qui compose le projet
+// get_next_line : est l'entrée du programme. C'est elle qui valide les arguments de départ avant de distribuer le travail aux autres fonctions.
 
+char	*get_next_line(int fd)
+{
+	static char	*stack;
+	char		*buffer;
+	char		*line;
+
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
+	buffer = (char *)ft_cal_z(BUFFER_SIZE + 1, sizeof(char));
+	if (!buffer)
+		return (NULL);
+	stack = read_line(fd, stack, buffer);
+	free(buffer);
+	if (!stack)
+		return (NULL);
+	line = extract_line(&stack);
+	return (line);
+}
+                        </code>
+                    </div>
+                </div>
+                <!-- <div class="subproject">
+                    <h4 class="subproject-title">Born to be root</h4>
+                    <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                            <li>S'initier à l'administration système en configurant une machine virtuelle sous Linux.</li>
+                            <li>Découvrir la gestion utilisateurs, des droits, des services et de l'automatisation via <code>cron</code>.</li>
+                        </ul>
+                        <code class="code-block">
+
+                        </code> 
+                    </div>
+                </div>-->
+                <div class="subproject">
+                    <h4 class="subproject-title">Pipex</h4>
+                        <div style="display:flex; margin: auto; align-items: center; margin-top: 2%; width: 98%;"><ul style="float:left; padding-left: 20px;">
+                                <li>Comprendre le fonctionnement des pipes Unix et la redirection des <em>file descriptors</em>.</li>
+                                <li>Apprendre à chaîner plusieurs processus pour reproduire un comportement de type shell<br>(ex : <code>ls | grep .c</code>).</li>
+                            </ul>
+                            <code class="code-block">// Pour en voir plus <a href="https://github.com/Azarielh/42/tree/main/pipex">Cliquez ici</a>
+// Quelques fonctions qui compose le projet
+
+int	main(int argc, char **argv, char **envp)
+{
+	int		i;
+	t_pipex	pipex;
+	int		status;
+	pid_t	pid;
+	pid_t	last_pid;
+	int		exitcode;
+
+	if (argc < 5)
+        print_error("Usage: ./pipex file1 cmd1 cmd2 file2\n", 1);
+	i = 2;
+	pipex.infile_name = argv[1];
+	pipex.flags = O_WRONLY | O_CREAT | O_TRUNC;
+	check_here_doc(argc, argv, &pipex, &i);
+	int fd_in = open_files(&pipex, argc, argv);
+	while (i < argc - 2)
+	{
+		create_child(argv[i], envp, fd_in);
+		i++;
+	}
+	last_pid = last_command(argc, argv, envp, pipex);
+	pid = 0;
+	exitcode = 1;
+	while (pid != -1)
+	{
+		pid = wait(&status);
+		if (pid == last_pid && WIFEXITED(status))
+			exitcode = WEXITSTATUS(status);
+		if (pid == last_pid && WIFSIGNALED(status))
+			exitcode = 128 + WTERMSIG(status);
+	}
+	return (exitcode);
+}
+                            </code>
+                        </div>
+                </div>
+            </div>
+            <a href="https://github.com/Azarielh/42" target="_blank" class="github-link" aria-label="Lien GitHub">
+                <img src="./Assets/Github_logo.png" alt="GitHub" />
+            </a>
+            <img class="expand_icon" src="./Assets/expand_icon.svg" alt="expand_icon"/>
+        </div>     
     </section>
 
     <section id="contact">
