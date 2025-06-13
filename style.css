@@ -194,6 +194,8 @@ p {
 
 h1 {
     color: white;
+    width: 50%;
+    font-size: 5rem;
 }
 h1 a {
     text-decoration: none;
